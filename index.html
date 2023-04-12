@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Encriptador de texto</title>
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;700&display=swap" rel="stylesheet"> 
+    </head>
+
+    <body>
+
+        <div id="particles-js"></div>
+
+        <header>
+            <div class="caja">
+                <img  class="logo" src="imagenes/Logo Alura.png" alt="logo de alura">
+                <h1 class="titulo">Encriptador de texto<span class="terminal-underscore"></span></h1>
+            </div>
+        </header>
+      
+        <main class="principal">
+            <section class="escribir">
+                <textarea class="txt-escribir" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+                <div>
+                    <h3 class="informacion">Solo letras minúsculas y sin acentos</h3>
+                </div>
+                <div class="botones">
+                    <button class="btn-encriptar">Encriptar</button>
+                    <button class="btn-desencriptar">Desencriptar</button>
+                </div>
+            </section>
+
+            <section class="mensaje">
+                <textarea class="txt-mensaje" cols="20" rows="10" placeholder=""></textarea>
+                <div class="no-encontrado">
+                    <h6>Ningún mensaje fue encontrado</h6>
+                    <p>Ingresa el texto que desees encriptar o desencriptar</p>
+                </div>
+                <div class="d-m">
+                    <button class="btn-copiar">Copiar</button>
+                </div>
+            </section>
+        </main>
+        
+        <script src="js/particles.min.js"></script>
+        <script src="js/app.js"></script>
+        <script src="js/scrip.js" ></script>
+
+        <footer>
+            <div class="img-link">
+                <a href="https://www.linkedin.com/in/juan-manuel-santiago-francisco-b29448264/">
+                    <img class="logo-l" src="imagenes/linkedin-c.png">
+                </a>
+                <a href="https://github.com/juanmsantiago">
+                    <img class="logo-g" src="imagenes/github-c.png">
+                </a> 
+            </div>
+        </footer>
+    </body>
+</html>

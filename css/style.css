@@ -1,0 +1,307 @@
+*{
+    background: #000000;
+}
+.logo{
+  padding-top: 10px;
+  margin-left: 10px;
+  width: 7%;
+  border-radius: 25%;
+}
+
+body{
+  font-family: 'IBM Plex Mono';
+  position: relative;
+  z-index: 99;
+}
+
+#particles-js {
+	height: 100vh; 
+	width: 100%;
+  position: fixed;
+  z-index: -1;
+}
+
+/*Titulo*/
+header {
+  padding: 20px 0;
+}
+
+.titulo{
+  text-align: center;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  margin: 0 0 1em;
+  clear: left;
+}
+
+@keyframes terminal-underscore {
+  0%{
+    background-color: #fff;
+  }
+  50%{
+    background-color: transparent;
+  }
+  100%{
+    background-color: #fff;
+  }
+}
+
+.terminal-underscore{
+  display: inline-block;
+  width: 0.6em;
+  height: 0.15em;
+  animation: terminal-underscore 1s infinite;
+}
+
+/*Seciones*/
+.principal{
+  background-color: transparent;
+}
+
+main{
+  width: 90%;
+  max-width: 1400px;
+  display: flex;
+  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.escribir, .mensaje{
+  margin-top: 5;
+  margin-bottom: 5px;
+  flex: 1;
+  position: relative;
+}
+
+
+/*Section escribir*/
+.informacion, .botones, .escribir, .txt-escribir{
+  background-color: #000;
+}
+.escribir{
+  padding: 3em 0;
+  min-width: 300px;
+  max-width: 800px;
+  height: auto;
+  margin-right: 2%;
+  margin-left: 2%;
+  flex: 1;
+}
+
+.d-m, .mensaje, .no-encontrado{
+  background-color: #121212;
+}
+
+.mensaje{
+  padding: 3em 0;
+  min-width: 300px;
+  max-width: 450px;
+  height: auto;
+  border-radius: 24px;
+  margin-right: 2%;
+  margin-left: 2%;
+  flex: 2;
+}
+
+
+.txt-escribir {
+  border: none;
+  color: #ffffff;
+  font-size: 30px;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-top: 2%;
+  width: 92%;
+  height: 75%;
+  padding: 2%;
+  text-transform: lowercase;
+  resize: none;
+}
+
+::placeholder {color: #ffffff;}
+  .txt-escribir:focus{
+    outline: none;
+  }
+
+.informacion{
+  color: #f1f1f1;
+  font-size: 12px;
+  line-height: 150%;
+  margin: 1%;
+  padding-left: 6%;
+}
+
+.no-encontrado{
+  color: #fff;
+  align-items: center;
+  line-height: 150%;
+  margin: 1%;
+  padding: 4%;
+}
+
+.no-encontrado h6{
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.no-encontrado p{
+  font-size: 16px;
+  text-align: center;
+}
+
+.no-encontrado:focus{
+  outline: none;
+}
+
+.txt-mensaje{
+  background-color: #121212;
+  background-image: url("../imagenes/Muñeco.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none;
+  color: #ffffff;
+  font-size: 24px;
+  margin-left: 6%;
+  margin-right: 6%;
+  margin-top: 1%;
+  width: 84%;
+  height: 60%;
+  padding: 2%;
+}
+
+.txt-mensaje:focus{
+  outline: none;
+}
+
+.botones{
+  display: flex;
+  margin-top: 18px;
+  position: relative;
+}
+
+/*Botones*/
+.btn-encriptar{
+  background: #010101;
+  border: 1px solid #ffffff;
+  border-radius: 24px;
+  color: #ffffff;
+  font-family: 'IBM Plex Mono';
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  height: 67px;
+  margin-left: 2%;
+  width: 45%;
+  min-width: 155px;
+}
+
+.btn-desencriptar{
+  background: #121212;
+  border: 1px solid #ffffff;
+  border-radius: 24px;
+  color: #ffffff;
+  font-family: 'IBM Plex Mono';
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  height: 67px;
+  margin-left: 4%;
+  margin-right: 2%;
+  width: 45%;
+  min-width: 155px;
+}
+
+.btn-copiar{
+  background-color: #fff;
+  font-size: 18px;
+  font-family: 'IBM Plex Mono';
+  font-weight: bold;
+  color: #000;
+  border: 1px solid #ffffff;
+  border-radius: 24px;
+  transition: 1s all;
+  cursor: pointer;
+  height: 67px;
+  margin-left: 8%;
+  margin-right: 8%;
+  margin-top: 40px;
+  width: 84%;
+}
+
+.btn-copiar:hover{
+  background: #747be7;
+  color: #fff;
+  transform: scale(1.2);
+}
+
+/*pie de pagina*/
+footer{
+  background-color: #010101;
+  text-align: center;
+  padding: 40px;
+}
+
+.img-link{
+  display: flex;
+  list-style: none;
+  justify-content: center;
+}
+
+.logo-l, .logo-g{
+  background-color: #fff;
+  border: .5px solid #ffffff;
+  border-radius: 50%;
+  width: 58px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+a{
+  text-decoration: none;
+  margin: 0 15px;
+}
+
+a {
+  position: relative; 
+  display: block;
+  width: 60px;
+  height: 60px;
+  background-color: #fff;
+  border-radius: 50%;
+  transition: .5s;
+}
+
+a::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #ffee10;
+  transition: .5s;
+  transform: scale(.9);
+  z-index: -1;
+}
+
+a:hover::before {
+  transform: scale(1.2);
+  box-shadow: 0 0 10px #ffee10;
+}
+
+a:hover {
+  color: #ffee10;
+  box-shadow: 0 0 25px #ffee10;
+}
